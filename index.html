@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/flatly/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T5jhQKMh96HMkXwqVMSjF3CmLcL1nT9//tCqu9By5XSdj7CwR0r+F3LTzUdfkkQf" crossorigin="anonymous">
+
+<body>
+        <h1 id="logo">
+            <span style='color: blue'>B</span>
+            <span style='color: red'>O</span>
+            <span style='color: yellow'>O</span>
+            <span style='color: blue'>K</span>
+            <span >.</span>
+            <span style='color: green'>I</span>
+            <span style='color: red'>N</span>
+        </h1>
+
+    <header class="header-container">
+        
+        <div id="search-box">
+
+            <div class="input-group-prepend">
+                <span class="input-group-text cyan lighten-2" id="basic-text1"><i class="fas fa-search text-white"
+                        aria-hidden="true"></i></span>
+            </div>
+            <input id="searchBar" class="form-control my-0 py-1" type="search" placeholder="i.e. Paris"
+                aria-label="Search">
+
+            <button id="searchButton" class="btn btn-info">Search</button>
+        </div>
+
+        <div id="check-box">
+            <div>
+                <label for="check-in">Check-in:</label>
+                <input id="check-in" type="date">
+            </div>
+            <div>
+                <label for="check-out">Check-out:</label>
+                <input id="check-out" type="date">
+            </div>
+            <div id="room-type" class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01">Room-types:</label>
+                </div>
+                <select class="custom-select" id="roomTypes">
+                        <option value="" selected>All</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="pref-box">
+            <!-- <label for="priceRange">Price:</label> -->
+            <div id='price-box'>
+                <div id='priceLabel'>
+                    <div id="priceText">Price</div>
+                    <div id='maxPrice'></div>
+                </div>
+                <input type="range" class="custom-range" min="0" max="" step="5" id="priceSlider">
+            </div>
+
+            <label for="propertyTypes">Property Types</label>
+            <select id="propertyTypes" class="custom-select">
+                <option value="" selected>All</option>
+                <option value="0">0 stars</option>
+                <option value="1">1 stars</option>
+                <option value="2">2 stars</option>
+                <option value="3">3 stars</option>
+                <option value="4">4 stars</option>
+                <option value="5">5 stars</option>
+            </select>
+            <div class="divider"></div>
+            <label for="guestRatings">Guest Ratings</label>
+            <select id="guestRatings" class="custom-select">
+                <option value="" selected>All</option>
+                <option value="Okay">Okay</option>
+                <option value="Fair">Fair</option>
+                <option value="Good">Good</option>
+                <option value="Very Good">Very Good</option>
+                <option value="Excellent">Excellent</option>
+            </select>
+            <div class="divider"></div>
+            <label for="hotelLocation">Hotel Location</label>
+            <select id="hotelLocation" class="custom-select">
+                <option value="" selected>All</option>
+            </select>
+        </div>
+
+        <div id="sort-box">
+            <!--Google map-->
+            <iframe id="map"src=""></iframe>
+            <!--Google Maps-->
+            <div id="sortBy">
+                    <label for="myFilters">Sort By</label>
+                    <select id="myFilters" class="custom-select">
+                        <option value="" selected>Our Recommendations</option>
+                        
+                    </select>
+            </div>
+        </div>
+        </div>
+
+    </header>
+
+    <section id='hotelSection'>
+
+    </section>
+
+    <script src='main.js'></script>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+        integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
